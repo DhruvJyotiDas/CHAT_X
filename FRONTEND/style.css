@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 600px;
+    height: 700px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Chat Header */
+.chat-container h2 {
+    background: #333;
+    margin: 0;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Chat Area Layout */
+#chat-area {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+}
+
+/* Online Users Section */
+#user-list {
+    width: 30%;
+    background: #282828;
+    padding: 10px;
+    overflow-y: auto;
+    border-right: 2px solid #444;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-item {
+    padding: 10px;
+    border-radius: 5px;
+    background: #007bff;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.user-item:hover,
+.user-item.selected {
+    background: #0056b3;
+}
+
+/* Chat Box (Large) */
+#chat-box-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-box {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background: #181818;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat Messages */
+.chat-message {
+    max-width: 70%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+.sender {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+.receiver {
+    background: #444;
+    color: white;
+    align-self: flex-start;
+}
+
+/* Message Input (Small, Fixed at Bottom) */
+#message-container {
+    display: flex;
+    padding: 10px;
+    background: #222;
+    align-items: center;
+    gap: 10px;
+}
+
+#message {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background: #222;
+    color: white;
+}
+
+/* Send & Emoji Buttons */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
